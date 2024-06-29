@@ -8,6 +8,13 @@
 
 html {
     font-size: 62.5%;
+    /* Soluciona el problema del box-sizing, quitando el tamaño del padding */
+    box-sizing: border-box;
+}
+
+/* Soluciona el problema del box-sizing, quitando el tamaño del padding */
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -59,4 +66,13 @@ body {
     background-color: var(--primario);
     color: var(--oscuro);
 }
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 410px;
+    padding: 20px;
+}
+
 
