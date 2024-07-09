@@ -6,6 +6,7 @@
     --gris: #757575;
 }
 
+/* Globales */
 html {
     font-size: 62.5%;
     /* Soluciona el problema del box-sizing, quitando el tamaño del padding */
@@ -18,10 +19,26 @@ html {
 }
 
 body {
-    font-size: 16px;
+    font-size: 16px; /* 1rem  = 10px */
     font-family: 'krub', sans-serif;
 }
 
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+
+}
+
+/* Tipografia */
 h1 {
     font-size: 3.8rem;
 }
@@ -38,6 +55,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
+/* Titulos */ 
 .titulo {
     font-size: 3.8rem;
 }
@@ -46,23 +64,11 @@ h1, h2, h3 {
     font-size: 2rem;
 }
 
+
+/* Navegación principal*/
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
-}
-
-.boton {
-    background-color: var(--secundario);
-    color: var(--blanco);
-    padding: 1rem 3rem;
-    margin-top: 1rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: .5rem;
-    width: 90%;
-    text-align: center;
 }
 
 .nav-bg {
