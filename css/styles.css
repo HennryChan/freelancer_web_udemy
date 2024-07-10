@@ -12,6 +12,13 @@ html {
     font-size: 62.5%;
     /* Soluciona el problema del box-sizing, quitando el tamaño del padding */
     box-sizing: border-box;
+    scroll-snap-type: y mandatory; /* Hace el efecto scroll*/
+}
+
+/* Scroll Snap */
+.servicios, .navegacion-principal, .formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 /* Soluciona el problema del box-sizing, quitando el tamaño del padding */
@@ -166,6 +173,7 @@ h1, h2, h3 {
     align-items: flex-end;
 }
 
+/* Servicios */ 
 @media (min-width: 768px) {
     .servicios {
         display: grid;
